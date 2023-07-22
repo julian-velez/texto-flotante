@@ -1,0 +1,33 @@
+body {
+    background-color: black;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .liquid-text {
+    font-size: 6vw;
+    background: linear-gradient(90deg, #ff4d00, #ffed00);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: liquid 3s infinite;
+  }
+  
+  @keyframes liquid {
+    0% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
+  
